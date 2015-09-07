@@ -5,20 +5,20 @@ difference(){
 union(){
 
 difference(){
-    cylinder(h=30, r=13, center=true);
-    cylinder(h=30.01, r=12, center=true);
+    cylinder(h=30, r=14.5, center=true);
+    cylinder(h=30.01, r=13.5, center=true);
 }
 
 intersection(){
     {translate([0, 0, -9.4])
         rotate([0, 25, 0])
-        cube([28.7, 26, 1], center=true);}
+        cube([29.7, 27, 1], center=true);}
      
-     cylinder(h=30, r=13, center=true);
+     cylinder(h=30, r=13.6, center=true);
 }
 
-translate([11.5, -5.5, -15])
-    cube([28, 11, 12]);
+translate([12.5, -5.5, -15])
+    cube([27, 11, 12]);
 }
 
 translate([11, -4.5, -14])
@@ -32,9 +32,9 @@ translate([40, 0, -14.5])
         cube([20,20,1.5], center=true);
 
 
-translate([12.5+27/2, 0, -3])
+translate([14+27/2, 0, -3])
     rotate([0, 2, 0])
-        cube([28, 11.01, 2], center=true);
+        cube([27.5, 11.01, 2], center=true);
 
 translate([40, -6, -9.5]){
     rotate([0, 0, 45])
