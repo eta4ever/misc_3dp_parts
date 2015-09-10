@@ -47,3 +47,14 @@ translate([40, -6, -9.5]){
 }
 
 }
+
+//add 1.5mm
+translate([0, 0, 15.75]) 
+    difference(){
+        cylinder(h=1.5, r=13.75, center=true);
+        
+        cylinder(h=1.52, r=12.75, center=true);
+        translate([12.75,0, 0]) 
+            cube([2,9,2], center=true);
+}
+    
