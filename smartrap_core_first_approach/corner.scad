@@ -51,8 +51,10 @@ difference()
         // отверстия
         translate([lmult*prof -5, prof/2+wall, prof/2+wall]) 
             rotate([90,0,0]) cylinder(h=prof+2*wall+0.01, r=rhole, center=true);
-        translate([lmult*prof -12, prof/2+wall, prof/2+wall]) 
-            cylinder(h=prof+2*wall+0.01, r=rhole, center=true);
+        translate([lmult*prof -12, prof/2+wall, wall/2]) 
+            cylinder(h=wall+0.01, r=rhole, center=true);
+        translate([lmult*prof -12, prof/2+wall, prof+1.5*wall+0.25]) 
+            cylinder(h=wall-0.49, r=rhole, center=true);
 
         translate([prof/2+wall, prof/2+wall, lmult*prof -5]) 
             rotate([90,0,0]) cylinder(h=prof+2*wall+0.01, r=rhole, center=true);
@@ -61,8 +63,10 @@ difference()
        
         translate([prof/2+wall, lmult*prof -5, prof/2+wall]) 
             rotate([0,90,0]) cylinder(h=prof+2*wall+0.01, r=rhole, center=true);
-        translate([prof/2+wall, lmult*prof -12, prof/2+wall]) 
-            cylinder(h=prof+2*wall+0.01, r=rhole, center=true);
+        translate([prof/2+wall, lmult*prof -12, wall/2]) 
+            cylinder(h=wall+0.01, r=rhole, center=true);
+        translate([prof/2+wall, lmult*prof -12, prof+1.5*wall+0.25]) 
+            cylinder(h=wall-0.49, r=rhole, center=true);
         
         
         
