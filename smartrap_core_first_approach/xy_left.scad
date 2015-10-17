@@ -2,6 +2,9 @@ $fa=5; $fs=0.1;
 
 profile=15.2;
 
+//test tube
+//translate([5+profile/2, 5+profile/2, 0]) color("Red", 0.5) cube([profile, profile, 100], center=true);
+
 rotate([-90,0,0]){
 
 difference(){
