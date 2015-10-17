@@ -20,12 +20,12 @@ difference(){
 	union(){	
 
 		hull(){
-			translate([5, 0, 5]) rotate([90, 0, 0]) cylinder(h=42, r=5, center=true); // нижний упор
+			translate([10, 0, 5]) rotate([90, 0, 0]) cylinder(h=42, r=5, center=true); // нижний упор
 			translate([20,-21,0]) cube([0.01, 42, 10]);
 		}
 	
 		hull(){
-			translate([5, 0, 20]) rotate([90, 0, 0]) cylinder(h=42, r=5, center=true); // верхний упор
+			translate([10, 0, 20]) rotate([90, 0, 0]) cylinder(h=42, r=5, center=true); // верхний упор
 			translate([20,-21,15]) cube([0.01, 42, 10]);
 		}
 
